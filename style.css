@@ -1,0 +1,117 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:  url(img/dark-black-orange-3d-abstract-wallpaper-picjumbo-com.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.mp3{
+    border: 1px solid black;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border: none;
+    opacity: 1;
+    background-color:  rgb(130, 130, 130,.2);
+    padding: 40px;
+}
+
+.mp3 h1{
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: .7;
+}
+
+.mp3 p{
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: .7;
+}
+
+
+#bar{
+    width: 90%;
+    appearance: none;
+    height: 2px;
+    cursor: pointer;
+
+}
+
+#bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    border-radius: 50%;
+    width: 12px;
+    aspect-ratio: 1/1;
+    background-color: #ccc;
+    border: 2px solid white;
+}
+
+.control-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+
+.control-buttons button{
+    width: 40px;
+    background-color: rgba(165, 165, 165, .6);
+    color: white;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin: 15px;
+    opacity: .6;
+    outline: 0;
+    font-size: 1.1rem;
+    aspect-ratio: 1/1; 
+    transition: .5s linear;
+}
+
+.control-buttons button:hover{
+    background-color: #ccc;
+    color: black;
+    border: 1px solid #ccc;
+    transition: .5s;
+    transform: scale(1.1);
+    opacity: .5;
+}
+
+.control-buttons i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-buttons .play-pause:hover{
+    transform: scale(1.3);
+    
+}
+
+.hidden{
+    visibility: hidden;
+}
