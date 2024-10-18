@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Music Player</title>
-</head>
-<body>
-     
+  </head>
+  <body>
     <section class="mp3">
-        <h1 class="tittle">Tittle</h1>
-        <p class="name">Name</p>
-        <audio id="song">
-            <source src="" type="audio/mpeg">
-        </audio>
-        <input class="progress" type="range"  value="0" id="bar">
-        <div class="control-buttons">
-            <button class="previous">
-                <i class='bi bi-rewind'></i>
-            </button>
-            <button class="play-pause">
-                <i class='bi bi-play' id="icon-change"></i>
-            </button>
-            <button class="next">
-                <i class='bi bi-fast-forward'></i>
-            </button>
-        </div>
-    </section>
-    
+      <img src="img/solo.jpg" alt="" id="img" />
+      <h1 class="tittle">Tittle</h1>
+      <p class="name">Name</p>
+      <audio id="song">
+        <source src="" type="audio/mpeg" />
+      </audio>
+      <input class="progress" type="range" value="0" id="bar" />
+      <span class="time">0:00</span>
+      <div class="control-buttons">
+        <button class="previous">
+          <i class="bi bi-rewind"></i>
+        </button>
+        <button class="play-pause">
+          <i class="bi bi-play" id="icon-change"></i>
+        </button>
+        <button class="next">
+          <i class="bi bi-fast-forward"></i>
+        </button>
+      </div>
 
+      <div class="volumen-icon">
+        <i class="bi bi-volume-mute" id="mute"></i>
+        <input class="volumen" type="range" min="0" max="100" id="volumen" />
+        <i class="bi bi-volume-up"></i>
+      </div>
+    </section>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
